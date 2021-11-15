@@ -1,0 +1,56 @@
+---
+title: "DataIO"
+output: html_document
+---
+
+Read iris
+Write your own reader
+Requirements:
+1. Read line by line
+2. Skip potential first n rows
+3. Ignore commented rows with '#'
+4. Allow several delimiter: white space, tab, comma, semicolon
+
+Writer
+Same as reader only for writing, but allow following two functionalities:
+Allow user to write a comment within the file of interes, which is displayed
+before everything else in the file. All comments are denoted with '#'
+Always include one line after the comment, which is also denoted with '#', which
+states the number of lines (with values!) written to the file. This should
+count the number of data rows saved in this particular file.
+
+Task:
+Read iris
+Create statistical summary: mean and median for all variables, which values are
+saved as comment in the output file.
+
+
+```{r}
+my_csv_reader = function(){
+  CSV = NULL
+  
+  # TODO
+  
+  return(CSV)
+}
+
+```
+
+
+```{r}
+my_csv_writer = function(){
+  CSV = NULL
+  
+  # TODO
+  
+  return(CSV)
+}
+
+```
+
+
+
+
+
+
+
