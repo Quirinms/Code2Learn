@@ -1,0 +1,79 @@
+---
+title: "Complexity"
+output: html_document
+---
+
+O(1)
+O(2) = O(1)
+O(n)
+O(2n) = O(n)
+O(log(n))
+O(n log(n))
+O(n^2)
+O(n^3)
+
+O(n) + O(n) = O(2n) = O(n)
+
+
+```{r}
+count = 0
+for(i in 1:100){
+  count = count + 1
+}
+```
+
+
+```{r}
+count = 0
+for(i in 1:100){
+  for(j in 1:100){
+    count = count + 1
+  }
+}
+```
+
+
+
+```{r setup, include=FALSE}
+#x = seq(1,100,1)
+y = c()
+for(i in 1:100){  # O(n)
+  y = c(y, i**2)  # O(1)
+}
+plot(1:100,y)
+```
+
+
+# Merge Sort
+
+```{r}
+
+
+```
+
+
+# Quick Sort
+
+```{r}
+
+
+```
+
+# Benchmarking
+
+```{r}
+
+# Loop 1:100 => Test following strategy 100 times in order to assess statistics about algorithms behaviour
+
+# Create random vector of size 10^3, 10^4, 10^5, 10^6 (Choose one size for complete experiment)
+
+# Time Quick Sort and Merge Sort respectively
+
+# Measure and save time
+
+# Make statistics of measurements
+
+```
+
+
+

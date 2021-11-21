@@ -1,0 +1,54 @@
+---
+title: "Datastructures"
+output: html_document
+---
+
+Vectors
+
+```{r}
+# Create vector of size zero
+
+# Create vector of size n with value 0
+
+# Create vector of size n with values 1:n
+
+# Create a vector from x to y with stepsize b
+
+# Create a random vector of size 10 with values from 1 to 100
+
+# Sort the random vector
+
+```
+
+Matrices
+
+```{r}
+# Define a matrix of size 2x2 with value zero
+
+# Create matrix of size 10x2 with numbers in column 1: 1:10 and column 2: 11:20
+
+# Create matrix of size 10x2 with numbers in row 1: 1:2, row 2: 3:4 and so on
+
+# 
+
+# 
+
+# 
+
+```
+
+
+Lists
+
+```{r}
+
+```
+
+
+Txt
+
+
+
+Table
+
+
