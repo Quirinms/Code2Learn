@@ -1,0 +1,51 @@
+---
+title: "StatisticalFunctions"
+output: html_document
+---
+
+Create your own statistical functions
+
+```{r}
+my_histogram = function(Data, NumBins = 10){
+  # Check Data if it has one variable or multiple
+  # We expect one variable, if we only have a vector
+  # if(), is.vector()
+  # We expect multiple variables, if we have a matrix with multiple rows AND columns
+  # if(), is.matrix(), dim(Data)[1] > 1 & dim(Data)[1] > 1
+  # Note: Multiple conditions in a if-statement can be done with logical AND = '&', OR = '|'
+  # Remember, what case you have and then apply different strategies. 
+  # Think of your own, in order to decide how to design the decision which case you are in and how to start the next moves
+  # Now, if you have on variable, then call a function for computing a histogram
+  # my_histogram_helper(variable)
+  # If you have multiple variables, call a for loop in order to process one variable of the matrix after another
+  # for(i in 1:dim(Data)[2]){}
+  # Call the helper function on each variable separately
+  # Return the values
+}
+
+my_histogram_helper = function(Data, NumBins = 10){
+  # Now you can compute the histogram of one given variable, which you can be sure of now
+  # Split the range of your data (min, max) up in equal parts (seq) depending on the number of bins NumBins (seq(min, max, (max-min)/(NumBins-1)))
+  # Count how many Data points are in each bin
+  # Return both the splitting of the range and the count connected with each bin in the range
+}
+```
+
+```{r}
+my_box_cox_transformation = function(Data, Lambda = seq(-1, 2, 0.1)){
+  # Here, Data must consist of only on variable
+  # You know from above how to do this
+  # Now, check for each Lambda the transformation of the data
+  # Loop through each Lambda entry
+  # for(i in 1:length(Lambda)){}
+  # TmpTrafo = Data**(Lambda[i])
+  # Test the TmpTrafo if it is Gaussian
+  # In order to evaluate this, use a statistical test (chisq.test)
+  # save the p.value
+  # Compute this for each Lambda
+  # Choose this lambda, which as max p.value
+  # Return lambda
+}
+```
+
+
