@@ -1,0 +1,102 @@
+---
+title: "DataIO"
+output: html_document
+---
+
+# Reader (Requirements)
+Write your own reader
+Requirements:
+1. Read line by line
+2. Skip potential first n rows
+3. Ignore commented rows with '#'
+4. Allow several delimiter: white space, tab, comma, semicolon
+
+# Writer (Requirements)
+Same as reader only for writing, but allow following two functionalities:
+Allow user to write a comment within the file of interes, which is displayed
+before everything else in the file. All comments are denoted with '#'
+Always include one line after the comment, which is also denoted with '#', which
+states the number of lines (with values!) written to the file. This should
+count the number of data rows saved in this particular file.
+
+# Task:
+Read iris
+Create statistical summary: mean and median for all variables, which values are
+saved as comment in the output file.
+
+
+```{r}
+my_csv_reader = function(FileName, Path, Separator = ";", SkipRows = 0){
+  CSV = NULL
+  
+  # open
+  # substr
+  # nchar, length, dim
+  # gsub
+  # Hint: Concept of "regular expressions"
+  #       => search pattern of letters, numbers or special characters within String
+  
+  # TODO: replace comments with functions, if-conditions, etcpp
+  # See for yourself, what type of variables you are getting and working with!
+  
+  # Prepare datastructure for saving the content of the file => rbind
+  # (we are going to read rows and to append rows one after anotjer)
+  
+  # open connection
+  # If skiprows larger 0, then skip some rows before going in to the read mode
+  
+  while(TRUE){
+    # readLines => save function call in variable
+    # TODO for yourself: check what datastructure is given in readLines
+    # check if there are still lines to read => if-condition
+    # Process the line so that you get a vector, where each entry is one word. Avoid a vector of length 1 with one sentence as entry
+    # Remember to split the line according to the given separator
+    # substr? gsub?
+    # Save in data structure
+  }
+  
+  # close connection
+  # return your data structure
+  return(CSV)
+}
+
+```
+
+
+```{r}
+my_csv_writer = function(Data, FileName, Path, Separator = ";", Comments = ""){
+  # Get dimensions of Data
+  # For-loop through Data by its given rows => dim(Data)[1]
+  # NumRows = ???
+  
+  # open connection
+  # writeLines: write your comment before everything else
+  for(i in 1:NumRows){
+    # writeLines: consider correct separator
+  }
+  
+  # close connection
+  
+  # Remember: Nothing needs to be returned here!
+  # You can create a message with "print()" to notify user about success
+}
+
+```
+
+
+
+
+
+```{r}
+# Read
+
+# Statistics
+# mean, median, sum, length, nrow, ncol
+# 
+
+# Write
+
+
+```
+
+
